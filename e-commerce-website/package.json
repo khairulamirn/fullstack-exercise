@@ -1,0 +1,16 @@
+{
+  "name": "e-commerce-website",
+  "version": "1.0.0",
+  "description": "e-commerce-website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "author": "khairulamirin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
