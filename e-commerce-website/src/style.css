@@ -4,52 +4,116 @@
     box-sizing: border-box;
 }
 
-header > #logo {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 25rem;
+header > #logoContainer {
     padding: 1rem;
     background-color: #003F62;
     color: white;
 }
 
-header > #navbar {
+header > #logoContainer > #logo {
+    max-width: 95%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+}
+
+header > #navbarContainer {
+    margin: 0 auto;
     padding: 1rem;
     background-color: #f5f5f5;
 }
 
-header > #navbar > p {
+header > #navbarContainer > #navbar {
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > #navbarContainer > #navbar > p {
     color: #003F62;
 }
-header > #navbar > ul {
+
+header > #navbarContainer > #navbar > ul {
     display: flex;
     gap: 1rem;
     list-style: none;
 }
 
-header > #navbar > ul > li > a {
+header > #navbarContainer > #navbar > ul > li > a {
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
 
-section#display {
+header > #breadcrumb {
+    margin-left: 14.3%;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-evenly;
+    gap: 1rem;
+    list-style: none;
+}
+
+#sectionContainer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#sectionContainer > #tableCart {
+    max-width: 71%;
+    margin: 3% auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sectionContainer > #tableCart > #tableLeft {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#sectionContainer > #tableCart > main > table > thead > tr > th {
+    padding: 10px;
+}
+
+#sectionContainer > #tableCart > #tableRight {
+    width: 35%;
+}
+
+#sectionContainer > #tableCart > #tableRight > table {
+    width: 100%;
+}
+
+#sectionContainer > #tableCart > #tableRight > table > tbody > tr > td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sectionContainer > #display {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 20rem;
+    gap: 10%;
     padding: 2rem;
 }
 
-section#display > div#left > h1 {
+#sectionContainer > #display > div#left > h1 {
     line-height: 2rem;
 }
 
-section#display > div#left > button {
+#sectionContainer > #display > div#left > button {
     margin: 10px 10px 0 0;
     padding: 1rem;
     border: none;
@@ -59,32 +123,26 @@ section#display > div#left > button {
     color: white;
 }
 
-section#display > div#left > button#view {
+#sectionContainer > #display > div#left > button#view {
     border: #003F62 1px solid;
     background-color: white;
     color: #003F62;
 }
 
-section#display > div#right > img {
-    height: 90%;
-    width: 90%;
-}
-
-section#productsSlider {
-    max-width: 80%;
+/* 3 products slider */
+#sectionContainer > #productsSlider {
+    max-width: 70%;
     margin: 0 auto;
 }
 
-section#productsSlider > #productContainer {
+#sectionContainer > #productsSlider > #productContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    gap: 5rem;
 }
 
-section#productsSlider > #productContainer > div {
-    width: 380px;
-    height: 140;
+#sectionContainer > #productsSlider > #productContainer > div {
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,4 +150,234 @@ section#productsSlider > #productContainer > div {
     padding: 10px;
     border: 1px solid gray;
     border-radius: 10px;
+}
+
+/* products */
+#sectionContainer > #productsSlider2 {
+    max-width: 90%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* text */
+#sectionContainer > #productsSlider2 > #text {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sectionContainer > #productsSlider2 > #text > ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+#sectionContainer > #productsSlider2 > #text > ul > li {
+    width: 139px;
+    height: 45px;
+    border: #003F62 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* top bottom */
+#sectionContainer > #productsSlider2 > #productContainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* boxes */
+#sectionContainer > #productsSlider2 > #productContainer2 > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+/* inside of box */
+#sectionContainer > #productsSlider2 > #productContainer2 > div > div {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* justify content on the y-axis */
+    align-items: start; /* align items on the x-axis */
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+#sectionContainer > #photo {
+    max-width: 90%;
+    height: 310px;
+    margin: 0 auto;
+    background-image: url(../src/assets/laptop-background.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+#sectionContainer > #photo > div {
+    width: 30%;
+    height: 70%;
+    position: relative;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#sectionContainer > #photo > div > button {
+    margin: 10px 10px 0 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #EDA415;
+    color: white;
+}
+
+#sectionContainer > #photo > div > h1 {
+    color: #2E8FC5;
+}
+
+#sectionContainer > #photo > div > p {
+    color: white;
+}
+
+#sectionContainer > #moreProduct {
+    max-width: 90%;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sectionContainer > #moreProduct > div#left {
+    width: 55%;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+#sectionContainer > #moreProduct > div#left > #content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sectionContainer > #moreProduct > div#left > #content > img {
+    width: 40%;
+    height: 40%;
+}
+
+#sectionContainer > #moreProduct > div#left > #content > #info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 20px;
+}
+
+#sectionContainer > #moreProduct > div#right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 15px;
+}
+
+#sectionContainer > #moreProduct > div#right > div {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+#sectionContainer > #moreProduct > div#right > div > #info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#sectionContainer > #benefit {
+    max-width: 90%;
+    margin: 2% auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    background-color: #E2F4FF;
+    border-radius: 20px;
+}
+
+#sectionContainer > #benefit > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer {
+    padding-top: 30px;
+    background-color: #E2F4FF;
+    color: #003F62;
+}
+
+footer > #subscribe {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    background-color: white;
+    border-radius: 20px;
+    color: #003F62;
+}
+
+footer > #subscribe > input {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #EDA415;
+}
+
+footer > #subscribe > input::placeholder {
+    color: #fff;
+}
+
+footer > main {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    padding: 20px;
+}
+
+footer > p {
+    padding: 20px;
+    text-align: center;
 }

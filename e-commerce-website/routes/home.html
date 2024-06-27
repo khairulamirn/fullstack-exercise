@@ -3,51 +3,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Electon</title>
+    <title>Home - ElectonK</title>
     <script src="/index.js" defer></script>
     <link rel="stylesheet" href="../src/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header id ="hero">
-        <div id="logo">
-            <h1>Electon 
-                <input type="text" placeholder="Search any things" id="search">
-                <button>Search</button>
-            </h1>
-            <div id="profile">
-                <i class="bi bi-person-circle" style="font-style: normal;">Sign in</i>
-                <i class="bi bi-cart" style="font-style: normal;">Cart</i>
+        <main id="logoContainer">
+            <div id="logo">
+                <h1>ElectonK
+                    <input type="text" placeholder="Search any things" id="search">
+                    <button>Search</button>
+                </h1>
+                <div id="profile">
+                    <i class="bi bi-person-circle" style="font-style: normal;">Sign in</i>
+                    <i class="bi bi-cart" style="font-style: normal;">Cart</i>
+                </div>
             </div>
-        </div>
-        <nav id="navbar">
-            <p>Browse categories</p>
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/catalog">Catalog</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/pages">Pages</a></li>
-                <li><a href="/about">About us</a></li>
-            </ul>
-            <p>30 days free return</p>
-        </nav>
+        </main>
+        <main id="navbarContainer">
+            <nav id="navbar">
+                <p>Browse categories</p>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/catalog">Catalog</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/pages">Pages</a></li>
+                    <li><a href="/about">About us</a></li>
+                </ul>
+                <p>30 days free return</p>
+            </nav>
+        </main>
     </header>
-    <section id="display">
-        <div id="left">
-            <h1>Canon <br>camera</h1>
-            <button>Shop now</button>
-            <button id="view">View more</button>
+    <main id="sectionContainer">
+        <section id="display">
+            <div id="left">
+                <h1>Canon <br>camera</h1>
+                <button>Shop now</button>
+                <button id="view">View more</button>
+            </div>
+            <div id="right">
+                <img src="../src/assets/DSLR camera.svg" alt="DSLR camera">
+            </div>
+        </section>
+        <section id="productsSlider">
+            <div id="productContainer">
+                <div><img src="" alt=""><p>DSLR camera <br>(6 items)</p></div>
+                <div><img src="" alt=""><p>DSLR camera <br>(6 items)</p></div>
+                <div><img src="" alt=""><p>DSLR camera <br>(6 items)</p></div>
+            </div>
+        </section>
+        <section id="productsSlider2">
+            <div id="text">
+                <h2>Popular Products</h2>
+            <ul>
+                <li>Camera</li>
+                <li>Laptop</li>
+                <li>Tablets</li>
+                <li>Mouse</li>
+            </ul>
+            </div>
+            <div id="productContainer2">
+                <div id="top">
+                    <div>
+                        <img src="" alt="">
+                        <p>DSLR camera</p>
+                        <p>$100</p>
+                        <div id="stars">
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <p>Wireless headphones</p>
+                        <p>$100</p>
+                        <div id="stars">
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <p>Controller</p>
+                        <p>$100</p>
+                        <div id="stars">
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <p>Tablet as a laptop</p>
+                        <p>$100</p>
+                        <div id="stars">
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                        </div>
+                    </div>
+    
+                </div>
+                <div id="bottom">
+                    <div>
+                        <img src="" alt="">
+                        <p>DSLR camera</p>
+                        <p>$100</p>
+                        <div id="stars">
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <p>Wireless headphones</p>
+                        <p>$100</p>
+                        <div id="stars">
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <p>Controller</p>
+                        <p>$100</p>
+                        <div id="stars">
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <p>Tablet as a laptop</p>
+                        <p>$100</p>
+                        <div id="stars">
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="photo">
+            <div>
+                <button>New laptop</button>
+                <h1>Sale up to 50% off</h1>
+                <p>12 inch hd display</p>
+                <button>Shop now</button>
+            </div>
+        </section>
+        <section id="moreProduct">
+                <div id="left">
+                    <div id="content">
+                        <img src="../src/assets/JBL bar.svg" alt="JBL">
+                        <div id="info">
+                            <p>JBL bar 2.1 deep bass</p>
+                            <p>$11.70</p>
+                            <div id="stars">
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                            </div>
+                            <div>
+                                <button>57</button>
+                                <button>11</button>
+                                <button>23</button>
+                                <button>59</button>
+                            </div>
+                            <div>
+                                <button>Add to cart</button>
+                                <button><i class="bi bi-eye"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div id="right">
+                    <div>
+                        <img src="" alt="">
+                        <div id="info">
+                            <p>Controller</p>
+                            <p>$50.70</p>
+                            <div id="stars">
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <div id="info">
+                            <p>Laptop</p>
+                            <p>$1111.70</p>
+                            <div id="stars">
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="benefit">
+            <div>
+                <img src="../src/assets/box-tick.svg" alt="">
+                <div>
+                    <h3>1 year warranty</h3>
+                    <p>Available warranty</p>
+                </div>
+            </div>
+            <div>
+                <img src="../src/assets/crown.svg" alt="">
+                <div>
+                    <h3>1 year warranty</h3>
+                    <p>Available warranty</p>
+                </div>
+            </div>
+            <div>
+                <img src="../src/assets/shield-security.svg" alt="">
+                <div>
+                    <h3>1 year warranty</h3>
+                    <p>Available warranty</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="subscribe">
+            <h1>Subscribe newsletter</h1>
+            <input type="text" placeholder="Email address">
+            <i class="bi bi-headphones">Call us 24/7: <br>(+60) 11-234 5678</i>
         </div>
-        <div id="right">
-            <img src="../src/assets/DSLR camera.svg" alt="DSLR camera">
-        </div>
-    </section>
-    <section id="productsSlider">
-        <div id="productContainer">
-            <div><img src="" alt=""><p>DSLR camera <br>(6 items)</p></div>
-            <div><img src="" alt=""><p>DSLR camera <br>(6 items)</p></div>
-            <div><img src="" alt=""><p>DSLR camera <br>(6 items)</p></div>
-        </div>
-    </section>
+        <main>
+            <div>
+                <img src="" alt="">
+                <p>ElectonK</p>
+                <p>36, Jalan Tun Razak, 56000 Kuala Lumpur</p>
+                <br>
+                <i><i class="bi bi-facebook"></i></i>
+                <i><i class="bi bi-google"></i></i>
+                <i><i class="bi bi-whatsapp"></i></i>
+            </div>
+            <div>
+                <p>Find product</p>
+                <ul>
+                    <li>Brownze arnold</li>
+                    <li>Automatic watches</li>
+                    <li>Smart phones</li>
+                    <li>Keyboards</li>
+                    <li>Playstation</li>
+                </ul>
+            </div>
+            <div>
+                <p>Get help</p>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Return policy</li>
+                    <li>Shipping policy</li>
+                    <li>Terms of use</li>
+                    <li>Payment policy</li>
+                </ul>
+            </div>
+            <div>
+                <p>About us</p>
+                <ul>
+                    <li>News</li>
+                    <li>Careers</li>
+                    <li>Partners</li>
+                    <li>Customer care</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </main>
+        <p>Copyright © 2021 ElectonK. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
