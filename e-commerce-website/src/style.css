@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --button-style1: 1px solid gray;
+    --border: 15px;
+    --product-box-style: 1px solid gray;
+}
+
 header > #logoContainer {
     padding: 1rem;
     background-color: #003F62;
@@ -47,8 +53,12 @@ header > #navbarContainer > #navbar > ul > li > a {
     cursor: pointer;
 }
 
-header > #breadcrumb {
-    margin-left: 14.3%;
+header > #breadcrumbContainer {
+    max-width: 92%;
+    margin: 0 auto;
+}
+
+header > #breadcrumbContainer > #breadcrumb {
     padding-top: 20px;
     display: flex;
     gap: 1rem;
@@ -337,6 +347,12 @@ header > #breadcrumb {
     gap: 1rem;
 }
 
+#footerContainer { /* for cart page */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     padding-top: 30px;
     background-color: #E2F4FF;
@@ -380,4 +396,75 @@ footer > main {
 footer > p {
     padding: 20px;
     text-align: center;
+}
+
+/* style for product deatils page */
+#productDetails {
+    max-width: 92%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#productDetails > #productLeft {
+    width: 50%;
+}
+
+#productDetails > #productLeft > img {
+    width: 100%;
+    border: var(--product-box-style);
+    border-radius: var(--border);
+}
+
+#productDetails > #productLeft > #productColor {
+    display: flex;
+    gap: 1rem;
+}
+
+#productDetails > #productLeft > #productColor > img {
+    width: 48%;
+    margin: 1rem 0 5rem 0;
+    border: var(--button-style1);
+    border-radius: var(--border);
+}
+
+#productDetails > #productLeft > button {
+    margin-left: 100%;
+    transform: translateX(-100%);
+    width: 30%;
+    padding: 15px;
+    border: var(--button-style1);
+    border-radius: var(--border);
+}
+
+#productDetails > #productRight {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 1rem;
+}
+
+#productDetails > #productRight > #buttonProduct {
+    display: flex;
+    gap: 1rem;
+}
+
+#productDetails > #productRight > #buttonProduct > button {
+    width: 30%;
+    padding: 15px;
+    border: var(--button-style1);
+    border-radius: var(--border);
+}
+
+#productDetails > #productRight > #buttonProduct > button:last-child {
+    width: 74px;
+    height: 73px;
+    margin-left: 10%;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+}
+
+#productDetails > #productRight > #buttonProduct > button > i {
+    font-size: 35px;
 }

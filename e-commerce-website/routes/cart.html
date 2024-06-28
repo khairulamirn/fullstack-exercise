@@ -10,164 +10,174 @@
 </head>
 <body>
     <header id ="hero">
-        <div id="logo">
-            <h1>ElectonK
-                <input type="text" placeholder="Search any things" id="search">
-                <button>Search</button>
-            </h1>
-            <div id="profile">
-                <i class="bi bi-person-circle" style="font-style: normal;">Sign in</i>
-                <i class="bi bi-cart" style="font-style: normal;">Cart</i>
+        <main id="logoContainer">
+            <div id="logo">
+                <h1>ElectonK
+                    <input type="text" placeholder="Search any things" id="search">
+                    <button>Search</button>
+                </h1>
+                <div id="profile">
+                    <i class="bi bi-person-circle" style="font-style: normal;">Sign in</i>
+                    <i class="bi bi-cart" style="font-style: normal;">Cart</i>
+                </div>
             </div>
-        </div>
-        <nav id="navbar">
-            <p>Browse categories</p>
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/catalog">Catalog</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/pages">Pages</a></li>
-                <li><a href="/about">About us</a></li>
-            </ul>
-            <p>30 days free return</p>
-        </nav>
-        <div id="breadcrumb">
-            <p>Home<i class="bi bi-chevron-right"></i></p>
-            <p>All category<i class="bi bi-chevron-right"></i></p>
-        </div>
+        </main>
+        <main id="navbarContainer">
+            <nav id="navbar">
+                <p>Browse categories</p>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/catalog">Catalog</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/pages">Pages</a></li>
+                    <li><a href="/about">About us</a></li>
+                </ul>
+                <p>30 days free return</p>
+            </nav>
+        </main>
+        <main id="breadcrumbContainer">
+            <div id="breadcrumb">
+                <p>Home<i class="bi bi-chevron-right"></i></p>
+                <p>All category<i class="bi bi-chevron-right"></i></p>
+            </div>
+        </main>
     </header>
-    <section id="tableCart">
-        <main id="tableLeft">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Subtotal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="" alt="">
-                            <div id="info">
-                                <p>Play game</p>
-                                <p>Color: Green</p>
-                                <p>Size: 30</p>
-                            </div>
-                        </td>
-                        <td>$50.70</td>
-                        <td><input type="number" value="1"></td>
-                        <td>$50.70</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="" alt="">
-                            <div id="info">
-                                <p>Play game</p>
-                                <p>Color: Green</p>
-                                <p>Size: 30</p>
-                            </div>
-                        </td>
-                        <td>$50.70</td>
-                        <td><input type="number" value="1"></td>
-                        <td>$50.70</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div id="buttonLeft">
-                <button>Continue shopping</button>
-                <button>Update cart</button>
-                <button>Clear cart</button>
-            </div>
-        </main>
-        <main id="tableRight">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Cart total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="subtotal">
-                            <p>Subtotal</p>
-                            <p>$ 23,20</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" placeholder="Enter coupon code">
-                            <button id="applyButton">Apply</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button>County <i class="bi bi-chevron-down"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="total-amount">
-                                <p>Total amount</p>
+    <main id="sectionContainer">
+        <section id="tableCart">
+            <main id="tableLeft">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="" alt="">
+                                <div id="info">
+                                    <p>Play game</p>
+                                    <p>Color: Green</p>
+                                    <p>Size: 30</p>
+                                </div>
+                            </td>
+                            <td>$50.70</td>
+                            <td><input type="number" value="1"></td>
+                            <td>$50.70</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="" alt="">
+                                <div id="info">
+                                    <p>Play game</p>
+                                    <p>Color: Green</p>
+                                    <p>Size: 30</p>
+                                </div>
+                            </td>
+                            <td>$50.70</td>
+                            <td><input type="number" value="1"></td>
+                            <td>$50.70</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="buttonLeft">
+                    <button>Continue shopping</button>
+                    <button>Update cart</button>
+                    <button>Clear cart</button>
+                </div>
+            </main>
+            <main id="tableRight">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cart total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subtotal">
+                                <p>Subtotal</p>
                                 <p>$ 23,20</p>
-                            </div>
-                            <button>Proceed to checkout</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </main>
-    </section>
-    <footer>
-        <div id="subscribe">
-            <h1>Subscribe newsletter</h1>
-            <input type="text" placeholder="Email address">
-            <i class="bi bi-headphones">Call us 24/7: <br>(+60) 11-234 5678</i>
-        </div>
-        <main>
-            <div>
-                <img src="" alt="">
-                <p>ElectonK</p>
-                <p>36, Jalan Tun Razak, 56000 Kuala Lumpur</p>
-                <br>
-                <i><i class="bi bi-facebook"></i></i>
-                <i><i class="bi bi-google"></i></i>
-                <i><i class="bi bi-whatsapp"></i></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Enter coupon code">
+                                <button id="applyButton">Apply</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button>County <i class="bi bi-chevron-down"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="total-amount">
+                                    <p>Total amount</p>
+                                    <p>$ 23,20</p>
+                                </div>
+                                <button>Proceed to checkout</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </section>
+    </main>
+    <main id="footerContainer">
+        <footer style="margin-top: 5rem;">
+            <div id="subscribe">
+                <h1>Subscribe newsletter</h1>
+                <input type="text" placeholder="Email address">
+                <i class="bi bi-headphones">Call us 24/7: <br>(+60) 11-234 5678</i>
             </div>
-            <div>
-                <p>Find product</p>
-                <ul>
-                    <li>Brownze arnold</li>
-                    <li>Automatic watches</li>
-                    <li>Smart phones</li>
-                    <li>Keyboards</li>
-                    <li>Playstation</li>
-                </ul>
-            </div>
-            <div>
-                <p>Get help</p>
-                <ul>
-                    <li>Contact us</li>
-                    <li>Return policy</li>
-                    <li>Shipping policy</li>
-                    <li>Terms of use</li>
-                    <li>Payment policy</li>
-                </ul>
-            </div>
-            <div>
-                <p>About us</p>
-                <ul>
-                    <li>News</li>
-                    <li>Careers</li>
-                    <li>Partners</li>
-                    <li>Customer care</li>
-                    <li>FAQ</li>
-                </ul>
-            </div>
-        </main>
-        <p>Copyright © 2021 ElectonK. All Rights Reserved.</p>
-    </footer>
+            <main>
+                <div>
+                    <img src="" alt="">
+                    <p>ElectonK</p>
+                    <p>36, Jalan Tun Razak, 56000 Kuala Lumpur</p>
+                    <br>
+                    <i><i class="bi bi-facebook"></i></i>
+                    <i><i class="bi bi-google"></i></i>
+                    <i><i class="bi bi-whatsapp"></i></i>
+                </div>
+                <div>
+                    <p>Find product</p>
+                    <ul>
+                        <li>Brownze arnold</li>
+                        <li>Automatic watches</li>
+                        <li>Smart phones</li>
+                        <li>Keyboards</li>
+                        <li>Playstation</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Get help</p>
+                    <ul>
+                        <li>Contact us</li>
+                        <li>Return policy</li>
+                        <li>Shipping policy</li>
+                        <li>Terms of use</li>
+                        <li>Payment policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>About us</p>
+                    <ul>
+                        <li>News</li>
+                        <li>Careers</li>
+                        <li>Partners</li>
+                        <li>Customer care</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+            </main>
+            <p>Copyright © 2021 ElectonK. All Rights Reserved.</p>
+        </footer>
+    </main>
 </body>
 </html>
