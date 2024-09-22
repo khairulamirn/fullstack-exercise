@@ -229,7 +229,7 @@ header > #breadcrumbContainer > #breadcrumb {
 #sectionContainer > #photo {
     max-width: 90%;
     height: 310px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     background-image: url(../src/assets/laptop-background.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -396,6 +396,15 @@ footer > main {
 footer > p {
     padding: 20px;
     text-align: center;
+}
+
+/* style for product page */
+#categoriesFilter {
+    max-width: 90%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* style for product deatils page */
